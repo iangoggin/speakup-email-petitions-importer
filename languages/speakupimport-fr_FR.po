@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Speakup! Email Petition Importer\n"
-"POT-Creation-Date: 2013-09-27 10:41+0100\n"
-"PO-Revision-Date: 2013-09-27 10:54+0100\n"
+"POT-Creation-Date: 2013-11-21 13:53+0100\n"
+"PO-Revision-Date: 2013-11-21 13:54+0100\n"
 "Last-Translator: Bastien Ho <bastienho@urbancube.fr>\n"
 "Language-Team: bastho <bastienho@urbancube.fr>\n"
 "Language: fr_FR\n"
@@ -23,19 +23,23 @@ msgstr "Sélectionnez votre fichier CSV"
 msgid "File format:"
 msgstr "Format de fichier :"
 
-#: ../form.php:34
+#: ../form.php:12
+msgid "Tab separated values, 16 not empty columns (from A to P)"
+msgstr "Valeurs séparées par une tabulation, 16 colonnes non vides (de A à P)"
+
+#: ../form.php:39
 msgid "First line contents columns title"
 msgstr "La première ligne contient les titres de colonnes"
 
-#: ../form.php:40
+#: ../form.php:45
 msgid "Remove signatures before importing"
 msgstr "Supprimer les signatures avant d'importer"
 
-#: ../form.php:42
+#: ../form.php:47
 msgid "(cannot be undone)"
 msgstr "(ne peut être annulé)"
 
-#: ../form.php:45 ../class.importer.php:12
+#: ../form.php:50 ../class.importer.php:12
 msgid "Import"
 msgstr "Importer"
 
@@ -60,9 +64,13 @@ msgstr "Ce n'est pas un fichier CSV !"
 msgid "Actually %s signatures in this petition"
 msgstr "Actuellement %s signatures dans cette pétition"
 
+#: ../class.importer.php:114
+msgid "Select petition"
+msgstr ""
+
 #: ../class.importer.php:140
-msgid "Error while parsing file, bad number of columns at line "
-msgstr "Errueur d'analyse du fichier, mauvais nombre de colonnes à la ligne"
+msgid "Error while parsing file, bad number of columns at line"
+msgstr "Erreur d'analyse du fichier, mauvais nombre de colonnes à la ligne"
 
 #: ../class.importer.php:149
 msgid "Error while parsing file, cannot open document"

@@ -136,8 +136,8 @@ class dk_Speakup_Import{
 	        		}
     				$datas[]=$data;
     			}
-				if($nb>1 && $nb!=16){ // check number of columns
-	        		?><div class="updated"><p><strong><?php _e('Error while parsing file, bad number of columns at line ', 'speakupimport' ) ?><?=$row?></strong></p></div><?php
+				if($nb>1 && $nb>=16){ // check number of columns
+	        		?><div class="updated"><p><strong><?php _e('Error while parsing file, bad number of columns at line', 'speakupimport' ) ?> <?=$row?></strong></p></div><?php
 				
 	        		return false;
 	        	}

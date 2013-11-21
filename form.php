@@ -1,4 +1,4 @@
-<form action="" method="post" enctype="multipart/form-data" id="speakupimportform">
+<form action="#" method="post" enctype="multipart/form-data" id="speakupimportform">
 	<p>
 		<label>
 			<?_e('Select your CSV file','speakupimport')?>
@@ -7,6 +7,11 @@
 				 
 				<?_e('File format:','speakupimport')?>
 				<table>
+					<tr>
+						<td colspan="16">							
+							<?_e('Tab separated values, 16 not empty columns (from A to P)','speakupimport')?>
+						</td>
+					</tr>
 					<tr>
 						<td><?php echo __( 'First Name', 'dk_speakup' ); ?></td>
 						<td><?php echo __( 'Last Name', 'dk_speakup' );?></td>

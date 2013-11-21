@@ -34,6 +34,10 @@ The plugins imports files in the same format that the export
 
 == Changelog ==
 
+= 1.1 =
+* Add explanations about csv format
+* Accepts CSV width more than 16 cols
+* Fix french translation
 
 = 1.0 =
 * Initial release

@@ -3,7 +3,7 @@
 Plugin Name: SpeakUp! Email Petitions Importer
 Plugin URI: http://ecolosites.fr/speakup-email-importer
 Description: A Speakup! Email petition tool that provide CSV import functionnality.
-Version: 1.0
+Version: 1.1
 Author: Bastho
 Author URI: http://urbancube.fr
 License: GPL2
