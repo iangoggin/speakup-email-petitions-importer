@@ -24,7 +24,7 @@ class dk_Speakup_Import{
 	 * Checks for bad caracters 
 	 */
 	function parsestr($str){
-		$validstr=str_split('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZéèêÉÈÊàâÀÂôÔùûÙÛçÇ0123456789 -_\'"&,.;:!?%+=');
+		$validstr=str_split('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZéèêÉÈÊàâÀÂôÔùûÙÛçÇ0123456789 -_\'"&,.;:!?%+=@');
 		$array=str_split($str);
 		$str='';
 		foreach($array as $c){
@@ -77,7 +77,7 @@ class dk_Speakup_Import{
 								$datas['country']             = $signe[7];
 								$datas['custom_field']        = utf8_encode($signe[8]);
 								$datas['date'] 				  = $signe[9];
-								$datas['is_confirmed'] 		  = ($signe[10]=='0'?'0':'1');
+								$datas['is_confirmed'] 		  = ($signe[10]=='0'?'unconfirmed':'confirmed');
 								//$datas->petitions_title 	  = $signe[11];
 								$datas['petitions_id'] 		  = $pid; //12
 								$datas['optin']               = $signe[13];
@@ -136,7 +136,7 @@ class dk_Speakup_Import{
 	        		}
     				$datas[]=$data;
     			}
-				if($nb>1 && $nb>=16){ // check number of columns
+				if($nb>1 && $nb<16){ // check number of columns
 	        		?><div class="updated"><p><strong><?php _e('Error while parsing file, bad number of columns at line', 'speakupimport' ) ?> <?=$row?></strong></p></div><?php
 				
 	        		return false;
